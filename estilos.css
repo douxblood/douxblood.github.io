@@ -4,8 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: Poppins semibold;
     list-style: none;
+    font-family: Helvetica;
  }
 
 
@@ -19,6 +19,8 @@ body {
    background-color: var(--background);
 }
 
+
+
 nav {   
    position: fixed;
    top: 0;
@@ -30,6 +32,7 @@ nav {
    background-color: rgb(15, 15, 15, 0.8); 
    backdrop-filter: blur(10px);
    z-index: 1000;
+   
  }
 
  ul {
@@ -57,7 +60,11 @@ nav {
    font-weight: 800;
    opacity: 0.8;
    transition: 0.2s ease-in-out;
-}
+   background: linear-gradient(to right, #ffb5cf, #ff7aa9);
+   background-clip: text;
+   color: transparent;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 
 .logo:hover {
    opacity: 1;
@@ -85,6 +92,7 @@ span {
 background: linear-gradient(to right, #ffb5cf, #ff7aa9);
 background-clip: text;
 color: transparent;
+
 }
 
 #menu{
@@ -122,12 +130,12 @@ section{
 }
 
 .info-box h1{
-   font-size: 5em;
+   font-size: 3em;
    font-weight: 500;
 }
 
 .info-box h3{
-   font-size: 2em;
+   font-size: 1.5em;
    font-weight: 400;
 }
 
@@ -179,8 +187,9 @@ section{
    gap: 2em;
 }
 
+
 .about-box h1{
-   font-size: 5em;
+   font-size: 3em;
 }
 
 .about-box p{
@@ -232,7 +241,7 @@ section{
 
 .header{
    text-align: center;
-   font-size: 5em;
+   font-size: 3em;
    margin: 0.5em 0;
 }
 
@@ -276,13 +285,11 @@ section{
 .box img{
    min-width: 25px;
    border-radius: 0.5em;
-}
-
-.box img{
    width: 350px; 
-   height: auto;
-   justify-content: center;
+
    text-align: center;
+
+   
 }
 
 #contact{
