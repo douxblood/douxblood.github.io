@@ -492,3 +492,14 @@ form input:focus{
    margin-top: 3em;
   }
 }
+
+@media (max-width:370px) {
+   .box img {
+      min-width: 2px;
+      border-radius: 0.5em;
+      width: 150px; 
+      text-align: center;
+      align-items: center;
+   
+     }
+}
