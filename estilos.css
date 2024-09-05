@@ -165,7 +165,8 @@ section{
 }
 
 ::-webkit-scrollbar-thumb{
-   background:  linear-gradient(to bottom, #ffb5cf, #ff7aa9); ;
+   background:  linear-gradient(to bottom, #ffb5cf, #ff7aa9); 
+   border-radius: 0.3em;
 }
 
 #about {
@@ -328,20 +329,166 @@ form input:focus{
 }
 
 
+/**diseño responsive**/
 
 
+@media (max-width:2500px) {
+   
+   .box img {
+      min-width: 10px;
+      border-radius: 0.5em;
+      width: 350px; 
+      align-items: center;
+      
+     }
+}
+
+@media (max-width:1200px){
+   .box img{
+      min-width: 2px;
+      border-radius: 0.5em;
+      width: 200px; 
+      align-items: center;
+   }
+}
+
+@media (max-width:968px) {
+
+   section {
+      padding: 8em 15%;
+   }
+
+   nav .btn{ 
+      display: none;
+
+   }
+
+   #menu {
+      display: block;
+   }
+
+   .links {
+      position: absolute;
+      top: 100%;
+      right: 0%;
+      width: 100%;
+      padding: 1em 3em;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.562);
+      display: none;
+   }
+
+   .links a {
+      margin: 2em 0; 
+      display: block;
+      font-size: 1.5em;
+      color: white;
+
+   }
+
+   .links.active {
+      display: block;
+   }
+
+   #home h1 {
+      font-size: 2em;
+   }
+
+   #home h3 {
+      font-size: 1em;
+   }
+   #home img{
+      width: 24vw;
+   }
+
+   #about {
+      flex-direction: column;
+   }
+   
+   #about img {
+      width: 32vw;
+   }
+
+   #about h1 {
+      font-size: 2em;
+   }
+   #about ul {
+      font-size: 1em;
+   }
+
+   .box img {
+      min-width: 2px;
+      border-radius: 0.5em;
+      width: 200px; 
+      text-align: center;
+   
+     }
 
 
+}
 
+@media (max-width:768px) {
 
+   #home h1 {
+      font-size: 2.5em;
+   }
 
+   #home h3 {
+      font-size: 1.5em;
+   }
+   #home img{
+      width: 32vw;
+   }
+  #about .skills {
+   gap: 3em;
 
- @font-face {
-    font-family: Beachfly;
-    src: url('./fonts/Beachfly\ Free\ Trial.otf');
+  }
+
+  #services .header {
+    font-size: 3em;
+  }
+  #contact .header {
+   font-size: 3em;
  }
 
- @font-face {
-    font-family: Poppins semibold;
-    src: url('./fonts/Poppins-SemiBold.ttf');
+ #contact .input-box span{
+   font-size: 1.2em;
  }
+ 
+ .input-box input {
+   padding: 0.5em 1em;
+ }
+
+ .box img {
+   min-width: 2px;
+   border-radius: 0.5em;
+   width: 150px; 
+   text-align: center;
+
+  }
+
+}
+
+@media (max-width:472px) {
+   #contact .header {
+      font-size: 1.5em;
+   }
+
+  .box img {
+   min-width: 2px;
+   border-radius: 0.5em;
+   width: 200px; 
+   text-align: center;
+   align-items: center;
+
+  }
+  
+  #home img{
+   width: 40vw;
+   border-radius: 50%;
+   margin-top: 3em;
+  }
+}
